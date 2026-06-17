@@ -10,7 +10,7 @@ interface DetailsProps {
 //   countryName: string;
 // }
 const Details: React.FC<DetailsProps> = ({ details }) => {
-  const { countryName } = useParams<{countryName: string }>();
+  const { countryName } = useParams<{countryName: string}>();
   const { state } = useLocation();
 
   const findCountry: Country =
