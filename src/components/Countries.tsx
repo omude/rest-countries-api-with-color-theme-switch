@@ -1,5 +1,4 @@
 import React from "react";
-import { DiVim } from "react-icons/di";
 import { Link } from "react-router-dom";
 import type { Country } from "../App";
 

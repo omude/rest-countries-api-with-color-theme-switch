@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { IoMoon } from "react-icons/io5";
 import DarkModeBtn from "./DarkModeBtn";
 
 const NavBar = () => {
