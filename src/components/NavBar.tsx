@@ -3,10 +3,10 @@ import DarkModeBtn from "./DarkModeBtn";
 
 const NavBar = () => {
   return (
-    <div className="bg-element flex justify-between items-center px-20 py-8 text-color shadow-md">
+    <div className="bg-element flex justify-between items-center px-5 md:px-20 py-8 text-color shadow-md">
       <Link
         to="/"
-        className="font-semibold text-[22px] decoration-none cursor-pointer"
+        className="font-semibold text-[14px] md:text-[22px] decoration-none cursor-pointer"
       >
         Where in the World?
       </Link>

@@ -7,16 +7,16 @@ interface SearchBarProps {
 
 const SearchBar: React.FC<SearchBarProps> = ({ searchFn }) => {
   return (
-    <div className="relative text-color">
+    <div className="relative w-full md:w-auto text-color">
       <input
         onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
           searchFn(e.target.value);
         }}
         type="text"
         placeholder="Search for a country..."
-        className="py-3 ps-16 pe-3 w-112.5 rounded-md shadow-md bg-element place-holder:text-[14px]"
+        className="py-3 ps-16 pe-3 w-full md:w-112.5 rounded-md shadow-md bg-element place-holder:text-[14px]"
       />
-      <IoMdSearch className="absolute top-4.5 left-5 text-2xl" />
+      <IoMdSearch className="absolute top-3.5 left-5 text-2xl" />
     </div>
   );
 };

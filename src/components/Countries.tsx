@@ -8,7 +8,7 @@ interface CountriesProps {
 
 const Countries: React.FC<CountriesProps> = ({ theWorld }) => {
   return (
-    <div className="grid grid-cols-4 gap-15 px-20 py-12.5 bg-body">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 md:gap-15 px-5 md:px-20 py:8 md:py-12.5 bg-body">
       {theWorld.map((country) => {
         return (
           <Link
@@ -19,7 +19,7 @@ const Countries: React.FC<CountriesProps> = ({ theWorld }) => {
             <img
               src={country.flags.png}
               alt=""
-              className="w-68 h-45.75 rounded-t-md"
+              className="w-full sm:w-68 h-45 sm:h-45.75 object-cover rounded-t-md"
             />
 
             <div className="text-color px-4.24 pt-6.25 pb-8.25 flex flex-col gap-3.25 items-start">

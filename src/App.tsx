@@ -47,7 +47,7 @@ function App() {
   // filter by search
   const filterBySearch = (search: string) => {
     const searchedCountry = allCountries.filter((country) => {
-      return country.name.toLowerCase().includes(search);
+      return country.name.toLowerCase().includes(search.toLocaleLowerCase());
     });
     setfilterCountries(searchedCountry);
   };
